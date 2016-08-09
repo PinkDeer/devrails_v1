@@ -1,0 +1,17 @@
+doctype html
+html
+head
+    title Devrails
+    
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+body
+  	nav.navbar.navbar-default
+    	.container-fluid
+    		.navbar-header
+      			== link_to "devrails.ru", root_path, class: "navbar-brand"
+
+	    .container-fluid
+    == yield
